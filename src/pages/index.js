@@ -61,10 +61,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/fav_logo.png" />
       </Head>
-      <nav className='px-5 sm:justify-between justify-evenly items-center flex p-4'>
+      <nav className='sm:px-5 px-[2px] sm:justify-between justify-evenly items-center flex p-4'>
         
         {/* Left nav elements */}
-        <div className=' justify-center items-center flex px-10'>
+        <div className=' justify-center items-center sm:flex px-10 '>
           
             <div onClick={() => scrollToSection(works)} className='cursor-pointer text-xl text-gray-800 font-serif px-2 py-2 hover:bg-[#e7eedd] rounded-lg'>
               Works
@@ -92,10 +92,10 @@ export default function Home() {
       {/* Right nav elements */}
         
         {/* Social Media Icons */}
-        <div className=" cursor-pointer text-2xl flex justify-center gap-10 py-3 text-gray-700 px-12 ">
-              <a href='https://twitter.com/_kallistus_'><BsTwitter className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110'/></a>
-              <a href='https://www.linkedin.com/in/antony-thomas-8a6273212/'><BsLinkedin className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110' /></a>
-              <a href='https://github.com/antony-thomas1'><BsGithub className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110'/></a>
+        <div className=" cursor-pointer sm:text-[40px] text-[42px] sm:flex   justify-center gap-10  text-gray-700 px-10">
+              <a href='https://twitter.com/_kallistus_'><BsTwitter className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 px-2 py-2'/></a>
+              <a href='https://www.linkedin.com/in/antony-thomas-8a6273212/'><BsLinkedin className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 px-2 py-2' /></a>
+              <a href='https://github.com/antony-thomas1'><BsGithub className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 px-2 py-2'/></a>
         </div>
         
       </nav>
@@ -118,7 +118,7 @@ export default function Home() {
               </h2>
               <h4 className=' text-black leading-2 font-serif py-8 text-2xl'>
                 Passionate Developer <br/>
-                Always looks to approach <br/> a different way! I'm Antony, <br/>
+                Always looks to approach in <br/> a different way! I'm Antony, <br/>
                 Blockchain/Web3 developer<br/> based in India.
               </h4>
               <h2 className='  text-slate-600 font-normal text-xl pt-7'>
@@ -360,7 +360,7 @@ export default function Home() {
                   <Image className='w-full h-[180px] object-cover rounded-t-[15px]' src={swiftpay}/>
                   <div className='flex flex-col p-4'>
                     <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[26px] '>
-                        SwiftPay is a crypto exchange applicaion. Users can connet their metamask wallet, then provide the receiver's wallet address, amount to be given,a message and a keyword. The GIPHY api will be fetching a gif based on the keyword given. 
+                        SwiftPay is a crypto exchange application. Users can connet their metamask wallet, then provide the receiver's wallet address, amount to be given,a message and a keyword. The GIPHY api will be fetching a gif based on the keyword given. 
                     </p>
                     <div className='mt-[2px] flex justify-center items-center gap-5 py-4'>
                       <a href='https://github.com/antony-thomas1/SwiftPay'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
