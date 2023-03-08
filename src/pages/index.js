@@ -70,7 +70,7 @@ export default function Home() {
               Works
             </div>
           
-          <a href='https://gateway.ipfscdn.io/ipfs/QmPc19TVtdJ5fVRHFWctjqNapWC2sv61Jxr2kcYg93xs9C'>
+          <a href='https://gateway.ipfscdn.io/ipfs/QmeKi9hyymXEka8bHu4Ahhh2UKmw3ChVEGkAuW4qKwrGkJ'>
             <div className='cursor-pointer text-xl text-gray-800 font-serif px-2 py-2 hover:bg-[#e7eedd] rounded-lg'>
               Resume
             </div>
