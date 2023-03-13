@@ -313,24 +313,26 @@ export default function Home() {
               </div>
             </div>
 
-            {/* BlockShift */}
+            {/* Mirage */}
           <div className='flex-col'>
               <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[510px] rounded-3xl bg-[#e7eedd]'>
                 <Image className='w-full h-[180px] object-cover rounded-t-[15px]' src={supplychain}/>
                 <div className='flex flex-col p-4'>
                   <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[26px] '>
-                      BlockShift is a supplychain management application using blockchain. It was developed by a team of four, we developed a dapp where a user can create a shipment which monitors the status of the shipment, view its approvals and send/receive NFT documents.
+                      Mirage is a supplychain management application using blockchain. It is developed by a team of four, we developed a dapp where a user can create a shipment which monitors the status of the shipment, view its approvals and send/receive NFT documents.
                   </p>
                   <div className='mt-[2px] flex justify-center items-center gap-5 py-4'>
                     <BsGithub className=' text-4xl hover:text-blue-800'/>
-                    <div className='px-3 py-1 bg-slate-700 font-sans text-white text-xl rounded-md hover:bg-black'>
+                    <div onClick={ () =>
+                      alert("Site under construction... Sorry for the inconvenience.")
+                      } className='px-3 py-1 bg-slate-700 font-sans text-white text-xl rounded-md hover:bg-black'>
                       View
                     </div>
                   </div>
                 </div>
               </div>
               <div className=' pt-7 text-center text-black text-lg font-mono'>
-                BlockShift
+                Mirage
               </div>
             </div>
           </div>
