@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
 import {
   BsTwitter,
   BsLinkedin,
   BsGithub,
 } from "react-icons/bs";
 
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import {FaReact, FaEthereum} from 'react-icons/fa'
 import swiftpay from 'public/swiftpay.jpg'
@@ -22,8 +23,7 @@ import thirdweb from 'public/thirdweb.png'
 import hardhat from 'public/hardhat.png'
 import solidity from 'public/solidity.png'
 import nextjs from 'public/nextjs.png'
-
-
+import Typewriter from 'typewriter-effect';
 
 export default function Home() {
 
@@ -66,24 +66,24 @@ export default function Home() {
         {/* Left nav elements */}
         <div className=' justify-center items-center sm:flex px-10 '>
           
-            <div onClick={() => scrollToSection(works)} className='cursor-pointer text-xl text-gray-800 font-serif px-2 py-2 hover:bg-[#e7eedd] rounded-lg'>
+            <div onClick={() => scrollToSection(works)} className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 px-2 py-2 cursor-pointer text-xl text-gray-800 font-serif hover:bg-[#e7eedd] rounded-lg'>
               Works
             </div>
           
           <a href='https://gateway.ipfscdn.io/ipfs/QmPYpmvnKW4pgheCbFEbS7iVi8RxzjwpwRmbszSp8rPxy2'>
-            <div className='cursor-pointer text-xl text-gray-800 font-serif px-2 py-2 hover:bg-[#e7eedd] rounded-lg'>
+            <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer text-xl text-gray-800 font-serif px-2 py-2 hover:bg-[#e7eedd] rounded-lg'>
               Resume
             </div>
           </a>
           
-            <div onClick={() => scrollToSection(contact)} className='cursor-pointer text-xl text-gray-800 font-serif px-2 py-2 hover:bg-[#e7eedd] rounded-lg'>
+            <div onClick={() => scrollToSection(contact)} className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer text-xl text-gray-800 font-serif px-2 py-2 hover:bg-[#e7eedd] rounded-lg'>
               Contact
             </div>
           
         </div>
 
         {/* Logo Image  */}
-        <div className='cursor-pointer justify-center items-center flex-col px-3'>
+        <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 py-2 cursor-pointer justify-center items-center flex-col px-3'>
           <Image src={logo} alt='logo' width={70} height={70}/>
 
         </div>
@@ -107,7 +107,15 @@ export default function Home() {
           {/* Center Heading */}
           <div className='text-center py-12 text-6xl text-gray-800 font-serif leading-normal'>
             <h1>Antony Thomas</h1>
-            <h1>Blockchain Developer</h1>
+            {/* <h1>Blockchain Developer</h1> */}
+            <Typewriter
+              options={{
+                strings: ['Web3 Developer', 'Blockchain Developer', 'UI/UX Designer'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+
           </div>
           <div className='justify-evenly items-center flex sm:flex-row flex-col'>
 
@@ -358,11 +366,14 @@ export default function Home() {
           <div className='justify-center gap-20 items-center flex sm:flex-row flex-col p-10'>
             {/* SwiftPay */}
             <div className='flex-col'>
-                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[510px] rounded-3xl bg-[#e7eedd]'>
+                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[450px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
                   <Image className='w-full h-[180px] object-cover rounded-t-[15px]' src={swiftpay}/>
                   <div className='flex flex-col p-4'>
                     <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[26px] '>
                         SwiftPay is a crypto exchange application. Users can connet their metamask wallet, then provide the receiver's wallet address, amount to be given,a message and a keyword. The GIPHY api will be fetching a gif based on the keyword given. 
+                        <br/><br/>Requirements:<br/>
+                        * Metamask wallet<br/>
+                        * Goerli testcoins
                     </p>
                     <div className='mt-[2px] flex justify-center items-center gap-5 py-4'>
                       <a href='https://github.com/antony-thomas1/SwiftPay'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
@@ -382,11 +393,14 @@ export default function Home() {
             {/* Cubic Crowdfunding */}
             <div className='flex-col'>
                 
-                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[510px] rounded-3xl bg-[#e7eedd]'>
+                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[450px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
                   <Image className='w-full h-[180px] object-cover rounded-t-[15px]' src={crowdfund}/>
                   <div className='flex flex-col p-4'>
                     <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[26px] '>
                         Cubic is a crowdfunding website where users can connect and contribute to existing campaigns and create their own campaigns, thus raise an amount from donations given by other users. Campaign details can be viewed by clicking the campaign itself.
+                        <br/><br/>Requirements:<br/>
+                        * Metamask wallet<br/>
+                        * Goerli testcoins
                     </p>
                     <div className='mt-[2px] flex justify-center items-center gap-5 py-4'>
                       <a href='https://github.com/antony-thomas1/Cubic'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
@@ -408,11 +422,14 @@ export default function Home() {
             {/* Neon Mint */}
             <div className='flex-col'>
                 
-                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[510px] rounded-3xl bg-[#e7eedd]'>
+                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[450px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
                   <Image className='w-full h-[180px] object-cover rounded-t-[15px]' src={neon}/>
                   <div className='flex flex-col p-4'>
                     <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[26px] '>
                       Neon Mint is a NFT token minting website. A NFT is deployed, users can mint the NON token till the minting is allowed by the owner. Token and realted details can be viewed by clicking the "Token Contract" button.
+                      <br/><br/>Requirements:<br/>
+                        * Metamask wallet<br/>
+                        * Goerli testcoins
                     </p>
                     <div className='mt-[20px] flex justify-center items-center gap-5 py-4'>
                       <a href='https://github.com/antony-thomas1/Neon_Mint'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
