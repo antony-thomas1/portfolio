@@ -363,7 +363,7 @@ export default function Home() {
           </div>
 
           {/* Project Tiles */}
-          <div className='justify-center gap-20 items-center flex sm:flex-row flex-col p-10'>
+          <div className='justify-center gap-[30px] items-center flex sm:flex-row flex-col p-10'>
             {/* SwiftPay */}
             <div className='flex-col'>
                 <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[450px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
@@ -427,11 +427,11 @@ export default function Home() {
                   <div className='flex flex-col p-4'>
                     <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[26px] '>
                       Neon Mint is a NFT token minting website. A NFT is deployed, users can mint the NON token till the minting is allowed by the owner. Token and realted details can be viewed by clicking the "Token Contract" button.
-                      <br/><br/>Requirements:<br/>
+                      <br/><br/><br/>Requirements:<br/>
                         * Metamask wallet<br/>
                         * Goerli testcoins
                     </p>
-                    <div className='mt-[20px] flex justify-center items-center gap-5 py-4'>
+                    <div className='mt-[10px] flex justify-center items-center gap-5 py-4'>
                       <a href='https://github.com/antony-thomas1/Neon_Mint'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
                       <a href='https://antony-neon.vercel.app/'>
                         <div className='px-3 py-1 bg-slate-700 font-sans text-white text-xl rounded-md hover:bg-black'>
