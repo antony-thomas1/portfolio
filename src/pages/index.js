@@ -110,7 +110,7 @@ export default function Home() {
             {/* <h1>Blockchain Developer</h1> */}
             <Typewriter
               options={{
-                strings: ['Web3 Developer', 'Blockchain Developer', 'UI/UX Designer'],
+                strings: ['Blockchain Developer', 'UI/UX Designer', 'Full-Stack Developer'],
                 autoStart: true,
                 loop: true,
               }}
