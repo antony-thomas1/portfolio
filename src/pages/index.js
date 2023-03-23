@@ -70,7 +70,7 @@ export default function Home() {
               Works
             </div>
           
-          <a href='https://gateway.ipfscdn.io/ipfs/QmZyyRnJAj6fYuDfZi5Z7ziqBoooueYsohMxpFjMuqAgYo'>
+          <a href='https://gateway.ipfscdn.io/ipfs/QmUWtCK8ckibEb8kYbbaUFq9FwF6usYMH8Yf2sS53NVFfU'>
             <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer text-xl text-gray-800 font-serif px-2 py-2 hover:bg-[#e7eedd] rounded-lg'>
               Resume
             </div>
@@ -373,7 +373,7 @@ export default function Home() {
                         SwiftPay is a crypto exchange application. Users can connet their metamask wallet, then provide the receiver's wallet address, amount to be given,a message and a keyword. The GIPHY api will be fetching a gif based on the keyword given. 
                         <br/><br/>Requirements:<br/>
                         * Metamask wallet<br/>
-                        * Goerli test coins
+                        * Goerli test tokens
                     </p>
                     <div className='mt-[2px] flex justify-center items-center gap-5 py-4'>
                       <a href='https://github.com/antony-thomas1/SwiftPay'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
@@ -400,7 +400,7 @@ export default function Home() {
                         Cubic is a crowdfunding website where users can connect and contribute to existing campaigns and create their own campaigns, thus raise an amount from donations given by other users. Campaign details can be viewed by clicking the campaign itself.
                         <br/><br/>Requirements:<br/>
                         * Metamask wallet<br/>
-                        * Goerli test coins
+                        * Goerli test tokens
                     </p>
                     <div className='mt-[2px] flex justify-center items-center gap-5 py-4'>
                       <a href='https://github.com/antony-thomas1/Cubic'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
@@ -429,7 +429,7 @@ export default function Home() {
                       Neon Mint is a NFT token minting website. A NFT is deployed, users can mint the NON token till the minting is allowed by the owner. Token and realted details can be viewed by clicking the "Token Contract" button.
                       <br/><br/><br/>Requirements:<br/>
                         * Metamask wallet<br/>
-                        * Goerli test coins
+                        * Goerli test tokens
                     </p>
                     <div className='mt-[10px] flex justify-center items-center gap-5 py-4'>
                       <a href='https://github.com/antony-thomas1/Neon_Mint'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
