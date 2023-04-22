@@ -10,12 +10,13 @@ import {
 import React, { useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import {FaReact, FaEthereum} from 'react-icons/fa'
-import swiftpay from 'public/swiftpay.jpg'
-import supplychain from 'public/supplychain.jpg'
-import curare from 'public/curare.jpg'
-import crowdfund from 'public/crowdfunding.jpg'
-import neon from 'public/neon.jpeg'
+import swiftpay from 'public/Swift_logo.png'
+import upload from 'public/upload.png'
+import curare from 'public/curare.png'
+import cubic from 'public/cubic_logo.png'
+import neon from 'public/Neon_logo.png'
 import logo from 'public/A.png'
+import mirage from 'public/Mirage_logo.png'
 import profile from 'public/profile2.jpg'
 import sign from 'public/sign.png'
 import truffle from 'public/truffle.png'
@@ -304,10 +305,12 @@ export default function Home() {
 
             {/* Curare */}
             <div className='flex-col'>
-              <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[510px] rounded-3xl bg-[#e7eedd]'>
-                <Image className='w-full h-[180px] object-cover rounded-t-[15px]' src={curare}/>
+              <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[350px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
+                  <div className='w-full h-[200px]  bg-[#1e2c54] rounded-t-[15px]'>
+                    <Image className='ml-[12px] py-11 object-cover ' src={curare}/>
+                  </div>
                 <div className='flex flex-col p-4'>
-                  <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[26px] '>
+                  <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[24px] '>
                       Curare is a hospital management application, done as a mini project consisting a four team members. The Objective of the project was to give a list of available doctors in a hospital and book an appointment.
                   </p>
                   <div className='mt-[47px] flex justify-center items-center gap-5 py-4'>
@@ -323,8 +326,10 @@ export default function Home() {
 
             {/* Mirage */}
           <div className='flex-col'>
-              <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[510px] rounded-3xl bg-[#e7eedd]'>
-                <Image className='w-full h-[180px] object-cover rounded-t-[15px]' src={supplychain}/>
+              <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[350px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
+                  <div className='w-full h-[200px]  bg-[#1e2c54] rounded-t-[15px]'>
+                    <Image className=' py-11 object-cover ' src={mirage}/>
+                  </div>
                 <div className='flex flex-col p-4'>
                   <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[26px] '>
                       Mirage is a supplychain management application using blockchain. It is developed by a team of four, we developed a dapp where a user can create a shipment which monitors the status of the shipment, view its approvals and send/receive NFT documents.
@@ -333,7 +338,7 @@ export default function Home() {
                     <BsGithub className=' text-4xl hover:text-blue-800'/>
                     <div onClick={ () =>
                       alert("Site under construction... Sorry for the inconvenience.")
-                      } className='px-3 py-1 bg-slate-700 font-sans text-white text-xl rounded-md hover:bg-black'>
+                      } className='px-3 py-1 bg-slate-700 font-serif text-white text-xl rounded-md hover:bg-black'>
                       View
                     </div>
                   </div>
@@ -366,19 +371,22 @@ export default function Home() {
           <div className='justify-center gap-[30px] items-center flex sm:flex-row flex-col p-10'>
             {/* SwiftPay */}
             <div className='flex-col'>
-                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[450px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
-                  <Image className='w-full h-[180px] object-cover rounded-t-[15px]' src={swiftpay}/>
+                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[350px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
+                  <div className='w-full h-[200px]  bg-[#1e2c54] rounded-t-[15px]'>
+                    <Image className='ml-[30px] py-11 object-cover ' src={swiftpay}/>
+                  </div>
+                  
                   <div className='flex flex-col p-4'>
-                    <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[26px] '>
+                    <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[23px] '>
                         SwiftPay is a crypto exchange application. Users can connet their metamask wallet, then provide the receiver's wallet address, amount to be given,a message and a keyword. The GIPHY api will be fetching a gif based on the keyword given. 
                         <br/><br/>Requirements:<br/>
                         * Metamask wallet<br/>
                         * Goerli test tokens
                     </p>
-                    <div className='mt-[2px] flex justify-center items-center gap-5 py-4'>
+                    <div className=' flex justify-center items-center gap-5 py-3'>
                       <a href='https://github.com/antony-thomas1/SwiftPay'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
                       <a href='https://antony-swiftpay.netlify.app/'>
-                        <div className='px-3 py-1 bg-slate-700 font-sans text-white text-xl rounded-md hover:bg-black'>
+                        <div className='px-3 py-1 bg-slate-700 font-serif text-white text-xl rounded-md hover:bg-black'>
                           View
                         </div>
                       </a>
@@ -393,10 +401,12 @@ export default function Home() {
             {/* Cubic Crowdfunding */}
             <div className='flex-col'>
                 
-                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[450px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
-                  <Image className='w-full h-[180px] object-cover rounded-t-[15px]' src={crowdfund}/>
+                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[350px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
+                  <div className='w-full h-[200px]  bg-[#1e2c54] rounded-t-[15px]'>
+                    <Image className=' py-11 object-cover ' src={cubic}/>
+                  </div>
                   <div className='flex flex-col p-4'>
-                    <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[26px] '>
+                    <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[20px] '>
                         Cubic is a crowdfunding website where users can connect and contribute to existing campaigns and create their own campaigns, thus raise an amount from donations given by other users. Campaign details can be viewed by clicking the campaign itself.
                         <br/><br/>Requirements:<br/>
                         * Metamask wallet<br/>
@@ -405,7 +415,7 @@ export default function Home() {
                     <div className='mt-[2px] flex justify-center items-center gap-5 py-4'>
                       <a href='https://github.com/antony-thomas1/Cubic'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
                       <a href='https://antony-cubic.netlify.app/'>
-                        <div className='px-3 py-1 bg-slate-700 font-sans text-white text-xl rounded-md hover:bg-black'>
+                        <div className='px-3 py-1 bg-slate-700 font-serif text-white text-xl rounded-md hover:bg-black'>
                           View
                         </div>
                       </a>
@@ -422,19 +432,21 @@ export default function Home() {
             {/* Neon Mint */}
             <div className='flex-col'>
                 
-                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[450px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
-                  <Image className='w-full h-[180px] object-cover rounded-t-[15px]' src={neon}/>
+                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[350px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
+                  <div className='w-full h-[200px]  bg-[#1e2c54] rounded-t-[15px]'>
+                    <Image className='ml-[10px] py-11 object-cover ' src={neon}/>
+                  </div>
                   <div className='flex flex-col p-4'>
-                    <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[26px] '>
+                    <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[20px] '>
                       Neon Mint is a NFT token minting website. A NFT is deployed, users can mint the NON token till the minting is allowed by the owner. Token and realted details can be viewed by clicking the "Token Contract" button.
                       <br/><br/><br/>Requirements:<br/>
                         * Metamask wallet<br/>
                         * Goerli test tokens
                     </p>
-                    <div className='mt-[10px] flex justify-center items-center gap-5 py-4'>
+                    <div className='mt-[2px] flex justify-center items-center gap-5 py-4'>
                       <a href='https://github.com/antony-thomas1/Neon_Mint'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
                       <a href='https://antony-neon.vercel.app/'>
-                        <div className='px-3 py-1 bg-slate-700 font-sans text-white text-xl rounded-md hover:bg-black'>
+                        <div className='px-3 py-1 bg-slate-700 font-serif text-white text-xl rounded-md hover:bg-black'>
                           View
                         </div>
                       </a>
@@ -444,6 +456,37 @@ export default function Home() {
                 
                 <div className=' pt-7 text-center text-black text-lg font-mono'>
                   Neon Mint
+                </div>
+                
+            </div>
+
+            {/* Upload */}
+            <div className='flex-col'>
+                
+                <div className='transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 cursor-pointer shadow-lg w-[300px] h-[620px] sm:w-[350px] sm:h-[530px] rounded-3xl bg-[#e7eedd]'>
+                  <div className='w-full h-[200px]  bg-[#1e2c54] rounded-t-[15px]'>
+                    <Image className='py-11 object-cover ' src={upload}/>
+                  </div>
+                  <div className='flex flex-col p-4'>
+                    <p className='p-[10px] font-serif text-black font-[12px] text-left leading-[20px] '>
+                    Upload is a Google Drive alternative, which stores the files to IPFS. Connect the Metamask wallet and have some Fantom test tokens to store your files. Upload unlimited amounts of files, just pay the gas fee which is less than a cent.
+                      <br/><br/><br/>Requirements:<br/>
+                        * Metamask wallet<br/>
+                        * Fantom test tokens
+                    </p>
+                    <div className='mt-[2px] flex justify-center items-center gap-5 py-4'>
+                      <a href='https://github.com/antony-thomas1/Upload'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
+                      <a href='https://antony-upload.vercel.app/'>
+                        <div className='px-3 py-1 bg-slate-700 font-serif text-white text-xl rounded-md hover:bg-black'>
+                          View
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className=' pt-7 text-center text-black text-lg font-mono'>
+                  Upload
                 </div>
                 
             </div>
