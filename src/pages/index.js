@@ -553,7 +553,7 @@ export default function Home() {
 
           <div className='flex flex-col justify-center items-center text-center'>
             <h4 className='font-serif font-normal text-white text-[20px]'>Contact:</h4>
-            <h4 className='font-serif font-normal text-white text-[20px] '>antonythomas@tutanota.com</h4>
+            <h4 className='font-serif font-normal text-white text-[20px] '>antonythomas1@proton.me</h4>
           </div>
 
           <div className='flex flex-col justify-center items-center text-center'>
