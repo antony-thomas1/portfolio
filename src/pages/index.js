@@ -335,12 +335,12 @@ export default function Home() {
                       Mirage is a supplychain management application using blockchain. It is developed by a team of four, we developed a dapp where a user can create a shipment which monitors the status of the shipment, view its approvals and send/receive NFT documents.
                   </p>
                   <div className='mt-[2px] flex justify-center items-center gap-5 py-4'>
-                    <BsGithub className=' text-4xl hover:text-blue-800'/>
-                    <div onClick={ () =>
-                      alert("Site under construction... Sorry for the inconvenience.")
-                      } className='px-3 py-1 bg-slate-700 font-serif text-white text-xl rounded-md hover:bg-black'>
-                      View
-                    </div>
+                    <a href='https://github.com/Mirage-Works/Mirage'><BsGithub className=' text-4xl hover:text-blue-800'/></a>
+                    <a href='https://bit.ly/mirage-project'>
+                      <div className='px-3 py-1 bg-slate-700 font-serif text-white text-xl rounded-md hover:bg-black'>
+                        View
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
